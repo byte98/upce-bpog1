@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ex01.FXMLMainController">
+   <bottom>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <buttons>
+          <Button fx:id="button_newRecord" mnemonicParsing="false" onAction="#button_newRecord_onAction" text="Nový záznam" />
+            <Button fx:id="button_deleteAll" mnemonicParsing="false" onAction="#button_deleteAll_onAction" text="Smazat vše" />
+        </buttons>
+      </ButtonBar>
+   </bottom>
+   <left>
+      <TextArea fx:id="textArea_input" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <PieChart fx:id="pieChart_chart" title="Graf odpracovaných hodin" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
