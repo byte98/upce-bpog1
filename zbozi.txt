@@ -1,0 +1,5 @@
+"Máslo", 50
+"Chleba", 30
+"Pivo", 15
+"Rohlik", 2.5
+"Rum", 150

@@ -50,10 +50,6 @@ public class ex01 extends Application {
     
     private Line yAxis;
     
-    private Label xLabel;
-    
-    private Label yLabel;
-    
     ChangeListener<Number> cl = new ChangeListener<>(){
             @Override
             public void changed(ObservableValue<? extends Number> ov, Number t, Number t1)
@@ -88,6 +84,8 @@ public class ex01 extends Application {
         this.yAxis.setStartY(pane.getHeight() / 2);
         this.yAxis.setEndX(pane.getWidth() / 2);
         this.yAxis.setEndY(pane.getHeight());
+        
+        
     }
     
     @Override
@@ -143,6 +141,9 @@ public class ex01 extends Application {
         this.yAxis.setStroke(Color.BLUE);
         this.yAxis.setStrokeWidth(2);
         this.pane.getChildren().addAll(yAxis);
+        
+        
+        this.setAxis();
         
         this.pane.widthProperty().addListener(cl);
         this.pane.heightProperty().addListener(cl);
